@@ -9,7 +9,7 @@ class Triangle
       begin
         raise TriangleError
       rescue TriangleError => error
-          puts error
+          puts error.message
       end
     elsif sides[0] == sides[2]
       return :equilateral
@@ -22,5 +22,7 @@ class Triangle
 end
 
 class TriangleError < StandardError
-
+  def message
+    "Invalid triangle"
+  end
 end
