@@ -5,6 +5,7 @@ class Triangle
   end
 
   def kind
+    puts sides[0] <= 0
     if sides[0] <= 0 || sides[0] + sides[1] <= sides[2]
       begin
         raise TriangleError
