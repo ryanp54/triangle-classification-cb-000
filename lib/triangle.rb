@@ -2,6 +2,7 @@ class Triangle
   attr_accessor :sides
   def initialize(a, b, c)
       @sides = [a, b, c].sort
+      puts sides
   end
 
   def kind
